@@ -25,7 +25,11 @@ echo $2 | perl -we 'BEGIN { @k = unpack "C*", pack "H*", "1734516E8BA8C5E2FF1C39
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -restart -agent -console
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
-#Setup ngrok
+#Setup apps
+brew install ffmpeg
+brew install streamlink
+brew install youtube-dl
+npm install --global http-server
 brew install --cask ngrok
 
 #Start ngrok by giving token and region
