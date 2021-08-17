@@ -1,4 +1,4 @@
-name: macOS
+name: nmv
 on: 
   workflow_dispatch:
 defaults:
