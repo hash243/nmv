@@ -1,4 +1,4 @@
-#run.sh VNC_USER_PASSWORD VNC_PASSWORD NGROK_AUTH_TOKEN
+#run.sh VNC_U_PASSWD VNC_PASSWD NGROK_AUTH_TOKEN
 
 #stop indexing by spotlight
 sudo mdutil -i off -a
