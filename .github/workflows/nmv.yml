@@ -16,5 +16,5 @@ jobs:
       run: source run.sh "user1" "user1" "$NGROK_AUTH_TOKEN"
     - name: ngrok supplying VNC on.. (username:user1/password:user1)
       run: curl --silent http://127.0.0.1:4040/api/tunnels | jq '.tunnels[0].public_url'
-    - name: tmate
-      uses: mxschmitt/action-tmate@v2
+    - name: rest
+      run: source rest.sh
