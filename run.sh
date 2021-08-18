@@ -27,11 +27,11 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate
 
 #Setup apps
-brew install ffmpeg
-brew install streamlink
-brew install youtube-dl
+brew -q install ffmpeg
+brew -q install streamlink
+brew -q install youtube-dl
 npm install --global http-server
-brew install --cask ngrok
+brew -q install --cask ngrok
 
 #Start ngrok by giving token and region
 ngrok authtoken $3
