@@ -14,8 +14,8 @@ sudo dscl . -passwd /Users/user1 $1
 sudo dscl . -passwd /Users/user1 $1
 sudo createhomedir -c -u user1 > /dev/null
 sudo wget -O /Users/vncuser/Library/Preferences/com.apple.SetupAssistant.plist --content-disposition https://raw.githubusercontent.com/hash243/nmv/master/Files/com.apple.SetupAssistant.plist > /dev/null
-echo "user1 - priority -10" | sudo tee -a /etc/security/limits.conf > /dev/null
-echo "user1 - nice -15" | sudo tee -a /etc/security/limits.conf > /dev/null
+#echo "user1 - priority -10" | sudo tee -a /etc/security/limits.conf > /dev/null
+#echo "user1 - nice -15" | sudo tee -a /etc/security/limits.conf > /dev/null
 
 #VNC setup
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -configure -allowAccessFor -allUsers -privs -all
